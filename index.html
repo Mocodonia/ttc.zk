@@ -1,46 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TTC - Home</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>TTC — Toniron Transit Company</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="lines.html">Lines</a></li>
-                <li><a href="stations.html">Stations</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="consturction.html">Construction</a></li>
-                <li><a href="plans.html">Plans</a></li>
-            </ul>
-        </div>
+  <header class="ttc-header">
+    <div class="ttc-logo">TTC</div>
+    <nav class="ttc-nav">
+      <a href="index.html">Home</a>
+      <a href="lines.html">Lines</a>
+      <a href="stations.html">Stations</a>
+      <a href="services.html">Services</a>
+      <a href="plans.html">Plans</a>
     </nav>
+  </header>
 
-    <section class="welcome" id="home">
-        <div class="welcome-overlay">
-            <div class="container">
-                <h1>Welcome to the Toniron Transport Company Website</h1>
-                <p class="hero-subtitle">For the transport of Toniron, Zuik</p>
-                <div class="home-buttons">
-                    <a href="stations.html" class="btn btn-primary">Stations (metro)</a>
-                    <a href="services.html" class="btn btn-secondary">Services</a>
-                </div>
-            </div>
+  <main>
+    <section class="welcome">
+      <div class="hero-content">
+        <h1>Toniron Transit Company</h1>
+        <p>The transportation of Toniron, Zuik</p>
+        <div class="hero-actions">
+          <a href="network-map.html" class="btn primary">View Network Map</a>
+          <a href="services.html" class="btn ghost">Services</a>
         </div>
+      </div>
     </section>
 
-            <div class="footer-bottom">
-                <p>TTC (Toniron Transport Company)</p>
-                <p>Warning: This isn't a real company, this is for Mocodonia (a Minecraft server)</p>
-                <p>Last Modified: February 18, 2026</p>
-                <p>Made by 7Zeb</p>
-            </div>
-        </div>
-    </footer>
+      </article>
+    </section>
+
+    <section class="status-strip">
+      <div class="status-item">
+        <span class="status-label">Capital Line</span>
+        <span class="status-pill ok">Running</span>
+      </div>
+      <div class="status-item">
+        <span class="status-label">Southern Line</span>
+        <span class="status-pill warn">Running</span>
+      </div>
+      <div class="status-item">
+        <span class="status-label">Southern Line Cnt</span>
+        <span class="status-pill alert">Running (some under construction)</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ttc-footer">
+    <p>© 2026 Toniron Transit Company · Built for Toniron</p>
+    <p>Warning: this isn't real, this is just for Mocodonia (Minecraft Server)</p>
+  </footer>
 </body>
 </html>
